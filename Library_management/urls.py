@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """
 URL configuration for Library_management project.
 
@@ -19,4 +20,19 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+=======
+
+from django.contrib import admin
+from django.urls import path, include
+from django.http import HttpResponse
+
+
+def root_view(request):
+    return HttpResponse("<h2>Welcome to the Library Management System API</h2><p>Visit <a href='/api/'>/api/</a> for API endpoints.</p>")
+
+urlpatterns = [
+    path('', root_view),
+    path('admin/', admin.site.urls),
+    path('api/', include('books.urls')),
+>>>>>>> 17c612a (Added serializers, views, and URLs for API endpoints)
 ]
