@@ -61,7 +61,7 @@ It allows users to **borrow books**, **earn points**, and manage library resourc
 
 | Action | Points |
 |--------|--------|
-| Borrow a book | +5 |
+| Borrow a book | 10 |
 | Return on time | +10 |
 | Late return | −5 |
 
